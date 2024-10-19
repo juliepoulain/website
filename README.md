@@ -1,4 +1,9 @@
-# Getting Started with Create React App
+
+# Welcome to my personal website!
+
+Follow the react instructions below to start up the website in your local environment.
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
