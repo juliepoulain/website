@@ -1,12 +1,40 @@
-const Nav = () => {
-    return (
-        <section id="nav">
-            <div className="nav-link">HOME</div>
-            <div className="nav-link">PROJECTS</div>
-            <div className="nav-link">ABOUT ME</div>
-            <div className="nav-link">CONTACT</div>
-        </section>
-    )
-}
+import { NavLink } from "react-router-dom";
 
-export default Nav
+const Nav = () => {
+  return (
+    <section id="nav">
+      <NavLink
+        to="/"
+        className={({ isActive }) => `nav-link${isActive ? " active" : ""}`}
+      >
+        HOME
+      </NavLink>
+      <NavLink
+        to="/projects"
+        className={({ isActive }) => `nav-link${isActive ? " active" : ""}`}
+      >
+        PROJECTS
+      </NavLink>
+      <NavLink
+        to="/about"
+        className={({ isActive }) => `nav-link${isActive ? " active" : ""}`}
+      >
+        ABOUT ME
+      </NavLink>
+      <NavLink
+        to="/contact"
+        className={({ isActive }) => `nav-link${isActive ? " active" : ""}`}
+      >
+        CONTACT
+      </NavLink>
+      <NavLink
+        to="/resume"
+        className={({ isActive }) => `nav-link${isActive ? " active" : ""}`}
+      >
+        RESUME
+      </NavLink>
+    </section>
+  );
+};
+
+export default Nav;
